@@ -4,7 +4,7 @@ This repo serves as an example to get started with Flask.
 
 # Getting started
 
-1. Clone the repo on your local device: `git@github.com:chunloy/flask-workshop.git`
+1. Clone the repo on your local device: `git clone git@github.com:chunloy/flask-workshop.git`
 2. Navigate into `flask-workshop` directory and create a virtual environment: `cd flask-workshop && python -m venv .venv`
 3. Activate the virtual environment: `source .venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
