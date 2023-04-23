@@ -45,32 +45,32 @@ def api():
         return f"Error while attempting to fetch data: {e}", 500
 
 
-# # fetching data from MOCK_DATA.json and return it
-# @app.get("/artists")
-# def get_artists():
-#     # read in data
-#     data = file_reader()
+# fetching data from MOCK_DATA.json and return it
+@app.get("/artists")
+def get_artists():
+    # read in data
+    data = file_reader()
 
-#     # uncomment the line below and observe the difference
-#     # return data
-#     return json.loads(data)
+    # uncomment the line below and observe the difference
+    # return data
+    return json.loads(data)
 
 
-# # see README for notes on making a post request
-# @app.post("/artists")
-# def post_data():
-#     # parse incoming request data as json
-#     response = request.get_json()
+# see README for notes on making a post request
+@app.post("/artists")
+def post_data():
+    # parse incoming request data as json
+    response = request.get_json()
 
-#     # recall that incoming data will not persist because we never wrote to MOCK_DATA.json
-#     # instead we're returning a copy of the data with incoming data appended
+    # recall that incoming data will not persist because we never wrote to MOCK_DATA.json
+    # instead we're returning a copy of the data with incoming data appended
 
-#     # convert data to python object e.g., a list, and append incoming data
-#     data = file_reader()
-#     data_list = json.loads(data)
-#     data_list.append(response)
+    # convert data to python object e.g., a list, and append incoming data
+    data = file_reader()
+    data_list = json.loads(data)
+    data_list.append(response)
 
-#     return data_list, 201
+    return data_list, 201
 
 
 # an example of using the route method insteads of get/post
