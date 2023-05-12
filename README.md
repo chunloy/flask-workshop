@@ -7,7 +7,7 @@ This repo serves as an example to get started with Flask.
 1. Clone the repo on your local device: `git clone git@github.com:chunloy/flask-workshop.git`
 2. Navigate into `flask-workshop` directory and create a virtual environment: `cd flask-workshop && python -m venv .venv`
 3. Activate the virtual environment: `source .venv/bin/activate`
-4. Install dependencies: `pip install -r requirements.txt`
+4. Install dependencies: `pip3 install -r requirements.txt`
 5. Start the server in debugging mode: `flask run --debug`
 6. Close the virtual environment when you're done: `deactivate`
 
@@ -42,6 +42,8 @@ This repo serves as an example to get started with Flask.
 
 These instructions assume you have Python 3.x installed.
 
+> Note: When running commands, be sure to use `python3` and `pip3`, instead of `python` or `pip`, to avoid potential errors.
+
 ### Installing pip
 
 Run this command to install `pip`:
@@ -59,7 +61,7 @@ python3 -m pip --version
 Run this command to install `virtualenv`:
 
 ```zsh
-pip install virtualenv
+pip3 install virtualenv
 ```
 
 > link to package description: https://pypi.org/project/virtualenv/
@@ -73,7 +75,7 @@ Why create a virtual environment? It installs packages only in the current direc
 1. Create a virtual environment by running this command:
 
 ```zsh
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 > Note: you should see a folder named `.venv` in your project's root directory
@@ -91,6 +93,7 @@ source .venv/bin/activate
 ```zsh
 deactivate
 ```
+Congratulations! You've set up a virttual environment and can safely install packages.
 
 ### Tracking dependencies (optional, sort of)
 
@@ -105,7 +108,7 @@ touch requirements.txt
 2. Run this command to list your dependencies in the text file:
 
 ```zsh
-pip freeze > requirements.txt
+pip3 freeze > requirements.txt
 ```
 
 > Note: You'll want to run the above command every time you install new packages. Python doesn't keep track of them for you.
